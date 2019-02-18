@@ -19,7 +19,7 @@ locale                   : "en-US"
 title                    : "Andante"
 title_separator          : "-"
 name                     : "Andante"
-description              : "A games developer from England"
+description              : "That games developer from England"
 url                      : "https://andantedevs.github.io"
 baseurl                  : #"/artefact-blog/home"
 repository               : "AndanteDevs/andantedevs.github.io"
@@ -108,7 +108,7 @@ analytics:
 author:
   name             : "Daniel Orr"
   avatar           : "/assets/images/andante.png"
-  bio              : ""
+  bio              : "That games developer from England. Developer at [Artefact](https://github.com/ArtefactDev)."
   location         : "Norfolk, England"
   email            : "orrdaniel73@gmail.com"
   links:
