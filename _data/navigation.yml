@@ -1,0 +1,11 @@
+# main links
+main:
+  - title: "Sitemap"
+    url: /sitemap/
+
+#documentation sidebar
+#docs:
+#  - title: "Getting Started"
+#    children:
+#      - title: "Installation"
+#        url: /docs/installation-guide/
