@@ -1,7 +1,10 @@
 ---
 layout: archive
 title: "Sitemap"
+excerpt: "All posts and wiki pages"
 permalink: /sitemap/
+categories:
+  - Information
 author_profile: false
 ---
 

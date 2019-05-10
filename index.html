@@ -4,39 +4,21 @@ permalink: /
 header:
   overlay_color: "#5e616c"
   overlay_filter: "0.5"
-  overlay_image: /assets/images/unsplash-image-banner.png
+  overlay_image: /assets/images/home-banner.png
 #  actions:
-#    - label: "Download"
-#      url: "https://github.com/ArtefactDev/Imperius-Return/archive/master.zip"
-excerpt: "That games developer from England"
-intro:
-  - excerpt: 'That games developer from England. Developer at [Artefact](https://artefactdev.github.io/blog)'
-#feature_row:
-#  - image_path: assets/images/unsplash-gallery-image-discord-chat.png
-#    alt: "unsplash-gallery-image-discord-chat.png"
-#    title: "Community-Created"
-#    excerpt: "The map is filled with community suggestions and feedback"
-#    url: "https://discord.gg/k7gRYYY"
-#  - image_path: /assets/images/unsplash-gallery-image-releases.png
-#    alt: "unsplash-gallery-image-releases.png"
-#    title: "Actively Developed"
-#    excerpt: "Artefact is updated frequently, with updates every Thursday, or even before that!"
-#    url: "https://artefactdev.github.io/blog/news/releases"
-#  - image_path: /assets/images/unsplash-gallery-image-code.png
-#    alt: "unsplash-gallery-image-code.png"
-#    title: "Lightweight"
-#    excerpt: "The Artefact code is built with performance in mind"
-#    url: "https://github.com/ArtefactDev/Imperius-Return"
+#    - label: "Projects"
+#      url: "https://andantedevs.github.io/projects/"
+excerpt: That games developer from England
+#intro:
+#  - excerpt: ""
+feature_row1:
+  - image_path: /assets/images/origami-games-banner.png
+    alt: "origami-games-banner.png"
+    title: "Origami Games"
+    excerpt: 'Founder of and developer at Origami Games'
+    url: "https://origami-games.github.io"
+    btn_label: "Website"
+    btn_class: "btn--primary"
 ---
 
-{% include feature_row id="intro" type="center" %}
-
-{% include feature_row %}
-
-<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
-
-{% for post in paginator.posts %}
-  {% include archive-single.html %}
-{% endfor %}
-
-{% include paginator.html %}
+{% include feature_row id="feature_row1" type="left" %}
