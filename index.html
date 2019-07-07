@@ -1,58 +1,24 @@
 ---
-layout: index-full
-description: the good site of life
+layout: splash
+permalink: /
+header:
+  overlay_color: "#5e616c"
+  overlay_filter: "0.5"
+  overlay_image: /assets/images/home-banner.png
+#  actions:
+#    - label: "Projects"
+#      url: "https://andantedevs.github.io/projects/"
+excerpt: That games developer from England
+#intro:
+#  - excerpt: ""
+feature_row1:
+  - image_path: /assets/images/origami-games-banner.png
+    alt: "origami-games-banner.png"
+    title: "Origami Games"
+    excerpt: 'Founder of and developer at Origami Games'
+    url: "https://origami-games.github.io"
+    btn_label: "Website"
+    btn_class: "btn--primary"
 ---
-{% for post in paginator.posts %}
-    {% include article_index.html %}
-{% endfor %}
 
-{% if paginator.total_pages > 1 %}
-    <div class="pagination">
-        <!-- link to first page -->
-        {% if paginator.total_pages > 3 %}
-            {% if paginator.page == 1 %}
-                <span class="btn disabled"><i class="fa fa-angle-double-left"></i></span>
-            {% else %}
-                <a class="btn" href="{{ '/' | prepend: site.baseurl | replace: '//', '/' }}"><i class="fa fa-angle-double-left"></i></a>
-            {% endif %}
-        {% endif %}
-
-        <!-- previous link -->
-        {% if paginator.previous_page %}
-            <a class="btn prev" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"><i class="fa fa-angle-left"></i></a>
-        {% else %}
-            <span class="btn disabled"><i class="fa fa-angle-left"></i></span>
-        {% endif %}
-
-        <!-- number links -->
-        {% capture start %}
-            {{ paginator.page | minus: 3 }}
-        {% endcapture %}
-
-        {% for i in (1..paginator.total_pages) limit: 5 offset: start %}
-            {% if i == paginator.page %}
-                <span class="btn disabled">{{ i }}</span>
-            {% elsif i == 1 %}
-                <a class="btn" href="{{ site.baseurl }}/">{{ i }}</a>
-            {% else %}
-                <a class="btn" href="/page/{{ i }}">{{ i }}</a>
-            {% endif %}
-        {% endfor %}
-
-        <!-- next link -->
-        {% if paginator.next_page %}
-            <a class="btn next" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}"><i class="fa fa-angle-right"></i></a>
-        {% else %}
-            <span class="btn disabled"><i class="fa fa-angle-right"></i></span>
-        {% endif %}
-
-        <!-- last page link -->
-        {% if paginator.total_pages > 3 %}
-            {% if paginator.page == paginator.total_pages %}
-                <span class="btn disabled"><i class="fa fa-angle-double-right"></i></span>
-            {% else %}
-                <a class="btn" href="{{ site.baseurl | replace: '//', '/' }}/page/{{paginator.total_pages}}"><i class="fa fa-angle-double-right"></i></a>
-            {% endif %}
-        {% endif %}
-    </div>
-{% endif %}
+{% include feature_row id="feature_row1" type="left" %}
